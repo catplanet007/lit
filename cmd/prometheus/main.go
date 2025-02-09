@@ -14,7 +14,6 @@ import (
 
 func HelloHandler(w http.ResponseWriter, r *http.Request) {
 	randomNum := rand.Intn(100)
-	log.Printf("rrr: %v", randomNum)
 	time.Sleep(time.Duration(randomNum) * time.Millisecond)
 	randomNum = rand.Intn(100)
 	if randomNum < 30 {
