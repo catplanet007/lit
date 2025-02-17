@@ -11,5 +11,7 @@ func main() {
 	flag.BoolVar(&showVersion, "v", false, "Show version information")
 	flag.Parse()
 
-	version.PrintVersion(showVersion)
+	if showVersion {
+		version.PrintVersionAndExit()
+	}
 }
