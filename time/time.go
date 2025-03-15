@@ -15,6 +15,10 @@ func init() {
 	}
 }
 
+func Format(t time.Time) string {
+	return FormatDateTime(t)
+}
+
 func FormatDateTime(t time.Time) string {
 	return t.In(loc8).Format("2006-01-02 15:04:05")
 }
