@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 
-	"github.com/catplanet007/lit/version"
+	"github.com/catplanet007/lit/lversion"
 )
 
 func main() {
@@ -12,6 +12,6 @@ func main() {
 	flag.Parse()
 
 	if showVersion {
-		version.PrintVersionAndExit()
+		lversion.PrintVersionAndExit()
 	}
 }

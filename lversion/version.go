@@ -1,4 +1,4 @@
-package version
+package lversion
 
 import (
 	"fmt"

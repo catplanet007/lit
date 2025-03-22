@@ -1,4 +1,4 @@
-package messagequeue
+package lmessagequeue
 
 import (
 	"sync"

@@ -9,7 +9,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
-	litprom "github.com/catplanet007/lit/prometheus"
+	litprom "github.com/catplanet007/lit/lprometheus"
 )
 
 func HelloHandler(w http.ResponseWriter, r *http.Request) {
