@@ -20,8 +20,8 @@ func main() {
 	opt.Go(func(o *lcc.GoOption) {
 		log.Printf("hello %s", o.FuncName)
 		select {
-		case <-ctx.Done():
-			log.Printf("ctx canceld: %s", ctx.Err().Error())
+		case <-o.Ctx.Done():
+			log.Printf("ctx canceld: %s", o.Ctx.Err().Error())
 		case <-time.After(time.Second * 2):
 		}
 		panic("my-error")
